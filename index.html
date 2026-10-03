@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090711">
+<title>For Sarauniya — The Day the Notes Became a Story</title>
+<style>
+:root{--ink:#f7f1ff;--muted:#b9adc9;--purple:#b18aff;--pink:#ff9ccf;--gold:#f1d6a0;--bg:#090711;--panel:#151020;--line:#ffffff18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 15% 12%,#713caa2b,transparent 40%),radial-gradient(ellipse at 90% 70%,#a33e7720,transparent 38%),linear-gradient(180deg,#0a0812,#0c0914 55%,#08070d);z-index:-2}
+.grain{position:fixed;inset:0;opacity:.035;pointer-events:none;z-index:4;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+main{width:min(100%,760px);margin:auto;padding:0 22px 70px}.screen{min-height:100svh;display:flex;flex-direction:column;justify-content:center;position:relative;padding:72px 0;scroll-margin-top:15px}
+.kicker{font:600 10px/1.5 system-ui,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--pink);margin-bottom:18px}
+h1,h2,p{margin-top:0}h1{font-size:clamp(46px,12vw,88px);line-height:.94;font-weight:400;letter-spacing:-.055em;margin-bottom:24px}h2{font-size:clamp(34px,8vw,56px);font-weight:400;line-height:1.02;letter-spacing:-.04em;margin-bottom:20px}
+p{font-size:clamp(17px,4.5vw,20px);line-height:1.75;color:#ded4e8;max-width:590px}.italic{font-style:italic;color:#fff}.accent{color:var(--pink)}.lav{color:var(--purple)}
+.small{font:12px/1.6 system-ui,sans-serif;letter-spacing:.06em;color:var(--muted)}
+button{font:600 11px system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:#ffffff0a;border:1px solid #d9bfff55;padding:15px 20px;border-radius:40px;cursor:pointer;transition:.25s}button:hover,button:focus-visible{background:#b18aff20;border-color:var(--pink);transform:translateY(-2px);outline:none}
+.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:22px}.textbtn{background:transparent;border-color:transparent;color:var(--muted)}
+.hero{min-height:100svh;text-align:center;align-items:center}.hero p{margin-left:auto;margin-right:auto}.seal{width:112px;height:112px;border:1px solid #d4b8ff55;border-radius:50%;display:grid;place-items:center;margin-bottom:35px;position:relative;color:var(--pink);font-size:35px;box-shadow:0 0 65px #a46aff20,inset 0 0 40px #a46aff0c}.seal:before,.seal:after{content:"";position:absolute;border:1px solid #d4b8ff2a;border-radius:50%;inset:9px}.seal:after{inset:-8px;border-style:dashed;animation:spin 35s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.hero h1{font-size:clamp(48px,14vw,100px)}.hero .sub{font:10px system-ui,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.scrollhint{position:absolute;bottom:28px;font:10px system-ui,sans-serif;letter-spacing:.2em;color:#8f829e;text-transform:uppercase;display:flex;gap:12px;align-items:center}.scrollhint:after{content:"";height:1px;width:34px;background:#a18bad}
+.paper{position:relative;background:linear-gradient(145deg,#f3e9d6,#d9c7a9);color:#30253a;padding:27px 24px 25px;transform:rotate(-1deg);max-width:530px;margin:12px 0 26px;box-shadow:0 22px 70px #0008,inset 0 0 45px #8b66401c;border-radius:2px}
+.paper:before{content:"";position:absolute;inset:9px;border:1px solid #8a6a5940;pointer-events:none}.paper .paperlabel{font:9px system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#866c64;margin-bottom:18px}.paper p{font-size:18px;color:#463647;line-height:1.55;margin:0}.paper .scribble{font-style:italic;font-size:23px;color:#5c3c69;margin-top:18px}
+.rule{height:1px;width:70px;background:linear-gradient(90deg,var(--pink),transparent);margin:28px 0}
+.number{font:10px system-ui,sans-serif;letter-spacing:.25em;color:#9f8eb5;margin-bottom:18px}
+.orbit{width:min(72vw,330px);aspect-ratio:1;border-radius:50%;margin:18px auto 34px;position:relative;display:grid;place-items:center;background:radial-gradient(circle,#b18aff16 0 19%,transparent 20%),radial-gradient(circle,transparent 0 47%,#b18aff18 47.3% 47.7%,transparent 48%),radial-gradient(circle,transparent 0 66%,#ff9ccf18 66.3% 66.6%,transparent 67%)}
+.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #cbaaff28;border-radius:50%;inset:9%;transform:rotate(-28deg) scaleY(.4)}.orbit:after{transform:rotate(44deg) scaleY(.42);border-color:#ff9ccf35}
+.orbit span{font-size:clamp(40px,10vw,66px);color:#f4d5f0;text-shadow:0 0 40px #d38aff80}
+.orbit i{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--pink);box-shadow:0 0 20px var(--pink);top:18%;left:24%}.orbit b{position:absolute;width:5px;height:5px;border-radius:50%;background:var(--gold);right:18%;bottom:24%;box-shadow:0 0 16px var(--gold)}
+.reveal{border:1px solid var(--line);border-radius:18px;padding:22px;background:linear-gradient(130deg,#ffffff08,#ffffff02);margin:20px 0;max-width:550px}.reveal .hiddenline{display:none}.reveal.open .hiddenline{display:block;animation:appear .7s ease}.reveal.open .revealbutton{display:none}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.revealbutton{border:0;padding:0;background:none;color:var(--pink);font-size:10px}.revealbutton:hover{background:none;transform:none}
+.timeline{border-left:1px solid #c8a6ff48;margin:28px 0 20px 7px;padding-left:24px;display:grid;gap:25px}.moment{position:relative}.moment:before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--pink);left:-29px;top:8px;box-shadow:0 0 14px #ff9ccf80}.moment strong{display:block;font:10px system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--purple);margin-bottom:7px}.moment p{font-size:16px;margin:0}
+.finalcard{padding:clamp(24px,7vw,46px);border:1px solid #d9bfff38;border-radius:22px;background:linear-gradient(145deg,#21152fbd,#100d19e8);box-shadow:0 25px 90px #0007;position:relative;overflow:hidden}.finalcard:after{content:"✦";position:absolute;right:22px;top:18px;color:#ff9ccf70;font-size:24px}.signature{font-size:25px;font-style:italic;color:var(--pink);margin-top:26px}.footer{text-align:center;padding:22px 0 8px;font:10px system-ui,sans-serif;letter-spacing:.18em;color:#81758f;text-transform:uppercase}
+#petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}.petal{position:absolute;bottom:-20px;color:#cbaaff66;animation:float linear forwards}@keyframes float{to{transform:translateY(-110vh) translateX(var(--drift)) rotate(450deg);opacity:0}}
+@media(min-width:700px){main{padding-left:40px;padding-right:40px}.screen{padding:90px 0}.paper{padding:34px 38px}.paper p{font-size:20px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body><div class="grain"></div><div id="petals"></div>
+<main>
+<section class="screen hero" id="begin">
+ <div class="seal">✦</div><div class="kicker">A little world, made for one person</div>
+ <h1>For <span class="accent">Sarauniya.</span></h1>
+ <p>Some stories begin with a grand plan.<br>Ours began with a group assignment…<br>and a few pages of notes.</p>
+ <div class="sub">A story only we know</div>
+ <div class="actions"><button onclick="go('first-page')">Open our story&nbsp; ↗</button></div>
+ <div class="scrollhint">Take your time</div>
+</section>
+<section class="screen" id="first-page">
+ <div class="number">01 — THE UNEXPECTED BEGINNING</div>
+ <div class="kicker">Before you became my person</div>
+ <h2>We were course mates.<br><span class="lav">Strangers, somehow.</span></h2>
+ <p>We had been in the same academic world, sharing the same course, crossing through the same semester — yet we hadn't really met. Then one day, a group assignment put us in the same moment.</p>
+ <p>It didn't look like the beginning of anything extraordinary. Just classmates, an assignment, and a conversation that could easily have been an ordinary one.</p>
+ <div class="rule"></div><p class="italic">But life can hide a whole chapter inside a very ordinary day.</p>
+ <div class="actions"><button onclick="go('notes')">Turn the page →</button></div>
+</section>
+<section class="screen" id="notes">
+ <div class="number">02 — THE NOTES</div><div class="kicker">A small kindness I still remember</div>
+ <h2>I asked for your notes.</h2>
+ <p>I hadn't copied the notes that semester. I was busy building Akrada, trying to make something real, and I still had exams to prepare for. So I asked if I could have your notes to snap them — and you let me.</p>
+ <div class="paper"><div class="paperlabel">A page from the beginning</div><p>There I was, looking for something to study from…</p><p class="scribble">…and unknowingly receiving a first page of us.</p></div>
+ <p>At the time, I was thinking about the exams ahead. I didn't know that one day, I would look back at that simple exchange and see how much it meant.</p>
+ <div class="actions"><button onclick="go('number')">Next little detail →</button></div>
+</section>
+<section class="screen" id="number">
+ <div class="number">03 — THE NUMBER</div><div class="kicker">A contact saved. A door opened.</div>
+ <div class="orbit"><span>♡</span><i></i><b></b></div>
+ <h2>Then we exchanged numbers.</h2>
+ <p>It was practical. Natural. Nothing dramatic — just a way to reach each other after that assignment and the notes.</p>
+ <p>And then we went home. The day could have ended there, filed away with every other day at school.</p>
+ <div class="reveal" id="reveal1"><button class="revealbutton" onclick="reveal('reveal1')">There was one more message… &nbsp;＋</button><div class="hiddenline"><p class="italic">You texted me that your bag had been stolen — with your books and assignments inside.</p><p>I remember telling you to stay calm, that God knows best, and that maybe it had happened for a reason.</p></div></div>
+ <div class="actions"><button onclick="go('turning')">Keep going →</button></div>
+</section>
+<section class="screen" id="turning">
+ <div class="number">04 — WHAT WE COULDN'T HAVE PLANNED</div><div class="kicker">A moment that became part of our story</div>
+ <h2>Neither of us knew what was happening.</h2>
+ <p>We didn't sit down that day and decide that we would become important to each other. We didn't know how a simple conversation would turn into something this meaningful.</p>
+ <p>We just kept talking. Somehow, little by little, two people who had barely known each other found themselves falling in love.</p>
+ <div class="paper"><div class="paperlabel">What I wish I could tell that version of us</div><p>You had no idea what this little exchange would grow into.</p><p class="scribble">And maybe that's the beautiful part.</p></div>
+ <p class="italic">Alhamdulillah for the way our paths crossed.</p>
+ <div class="actions"><button onclick="go('real')">Something about you →</button></div>
+</section>
+<section class="screen" id="real">
+ <div class="number">05 — THE THING I ADORE</div><div class="kicker">Not a perfect version. The real you.</div>
+ <h2>I adore that <span class="accent">you're real.</span></h2>
+ <p>Not because you have to be polished every second. Not because you have to say the perfect thing, look a certain way, or pretend to be someone else.</p>
+ <p>I adore the realness in you — the person you are when there's no performance to keep up, no mask to wear, no need to be anything other than yourself.</p>
+ <p>There's something precious about being able to care for someone as they truly are. And I hope you always feel that you can be fully yourself with me: honest, human, still growing, and loved.</p>
+ <div class="reveal" id="reveal2"><button class="revealbutton" onclick="reveal('reveal2')">One thing I hope you never forget… &nbsp;＋</button><div class="hiddenline"><p class="italic">You don't have to become a different person to be worthy of tenderness. The real you is the one I want to keep knowing.</p></div></div>
+ <div class="actions"><button onclick="go('tomorrow')">A page for what lies ahead →</button></div>
+</section>
+<section class="screen" id="tomorrow">
+ <div class="number">06 — THE UNWRITTEN PAGES</div><div class="kicker">No pretending to know the future</div>
+ <h2>There is still so much story left.</h2>
+ <p>More conversations, more ordinary days that might become treasured memories, more lessons in understanding each other, more reasons to be grateful.</p>
+ <p>I pray that Allah guides us toward what is good, grows kindness and patience between us, and — if He wills — lets our story find its way to Nikkah with barakah in it.</p>
+ <p>Not because life must be perfect to be beautiful, but because whatever we build deserves sincerity, respect, and the care to keep choosing what is right.</p>
+ <div class="orbit"><span>∞</span><i></i><b></b></div>
+ <div class="actions"><button onclick="go('letter')">One last page, Hayati →</button></div>
+</section>
+<section class="screen" id="letter">
+ <div class="number">07 — FROM ME TO YOU</div><div class="kicker">Read this slowly, my Queen</div>
+ <div class="finalcard">
+ <h2>My Sarauniya,</h2>
+ <p>When I think about us, I don't only think about love as a big word. I think about that group assignment. Your notes. The number we exchanged. Your message when you got home. A conversation that neither of us knew would become the beginning of something so dear to us.</p>
+ <p>And I think about how unexpectedly someone can become a part of your heart. You came into my life without a grand entrance, but your presence has become something I genuinely value.</p>
+ <p>I adore you for being real. I don't want to love an imagined version of you. I want to keep learning the person you are, listening to you, laughing with you, being honest with you, and treating your heart with care.</p>
+ <p>Thank you for being you, Sarauniya. Thank you for the day our paths finally met, even though we had been course mates all along. Of all the things that day could have brought, I'm grateful it brought me the chance to know you.</p>
+ <p>May Allah bless you, protect your heart, make ease find you, and guide every step ahead. And if Allah writes that we are to build a life together, may He make it gentle, faithful, and full of barakah.</p>
+ <p class="italic">Alhamdulillah — for the notes, the number, the first message, and the love we never saw coming.</p>
+ <div class="signature">Yours, with sincerity,<br>Muhammad ♡</div>
+ </div>
+ <div class="actions"><button onclick="replay()">Read our story again ↻</button><button class="textbtn" onclick="makeStars()">A little more love ✦</button></div>
+ <div class="footer">Made for Sarauniya · A story only we know</div>
+</section>
+</main>
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})}
+function reveal(id){document.getElementById(id).classList.add('open')}
+function replay(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
+function makeStars(){for(let i=0;i<24;i++){const e=document.createElement('span');e.className='petal';e.textContent=['✦','♡','✧'][i%3];e.style.left=(Math.random()*100)+'%';e.style.fontSize=(10+Math.random()*18)+'px';e.style.setProperty('--drift',((Math.random()-.5)*140)+'px');e.style.animationDuration=(4+Math.random()*5)+'s';document.getElementById('petals').appendChild(e);setTimeout(()=>e.remove(),9500)}}
+let touchTimer;document.addEventListener('click',e=>{if(e.target.closest('button'))return;if(Math.random()>.82)makeStars()});
+</script>
+</body></html>
